@@ -9,32 +9,27 @@
 </head>
 <body>
     <header>
-исправь тут код, под script.js
-
-    <div class="logo">
-        <h1>Bezumnyy Tekhnarioz</h1>
-    </div>
-    <!-- Гамбургер-кнопка -->
-    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
-    <nav class="menu">
-        <ul>
-            <li><a href="#home" class="active">Home</a></li>
-            <li><a href="#services">Diensten</a></li>
-            <li><a href="#projects">Projecten</a></li>
-            <li><a href="#offers">Aanbiedingen</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-    <div class="language-selector">
-        <select id="language" onchange="changeLanguage()">
-            <option value="nl">Nederlands</option>
-            <option value="en">English</option>
-            <option value="ua">Українська</option>
-            <option value="ru">Русский</option>
-        </select>
-    </div>
-</header>
-
+        <div class="logo">
+            <h1>Bezumnyy Tekhnarioz</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#services">Diensten</a></li>
+                <li><a href="#projects">Projecten</a></li>
+                <li><a href="#offers">Aanbiedingen</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="language-selector">
+            <select id="language" onchange="changeLanguage()">
+                <option value="nl">Nederlands</option>
+                <option value="en">English</option>
+                <option value="ua">Українська</option>
+                <option value="ru">Русский</option>
+            </select>
+        </div>
+    </header>
 
     <section id="home" class="fade-in">
         <h2>Welkom bij Bezumnyy Tekhnarioz</h2>
@@ -51,14 +46,24 @@
         </ul>
     </section>
 
-    <section id="projects" class="fade-in">
-        <h2>Onze Projecten</h2>
-        <div class="project-gallery">
-            <div class="project-item">Project 1</div>
-            <div class="project-item">Project 2</div>
-            <div class="project-item">Project 3</div>
+  <section id="projects" class="fade-in">
+    <h3>Onze Projecten</h3>
+    <div class="project-gallery">
+        <div class="project-item">
+            <img src="images/project1.jpg" alt="Project 1">
+            <p>Project 1</p>
         </div>
-    </section>
+        <div class="project-item">
+            <img src="images/project2.jpg" alt="Project 2">
+            <p>Project 2</p>
+        </div>
+        <div class="project-item">
+            <img src="images/project3.jpg" alt="Project 3">
+            <p>Project 3</p>
+        </div>
+    </div>
+</section>
+
 
     <section id="offers" class="fade-in">
         <h2>Onze Aanbiedingen</h2>

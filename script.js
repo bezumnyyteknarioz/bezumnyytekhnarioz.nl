@@ -43,4 +43,3 @@ function changeLanguage() {
             "© 2024 Bezumnyy Tekhnarioz - Все права защищены";
     }
 }
-

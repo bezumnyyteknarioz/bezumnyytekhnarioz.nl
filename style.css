@@ -146,6 +146,9 @@ ul li {
         font-size: 14px;
     }
 }
+.nav-item:hover .nav-link {
+    color: #ffcc00 !important;
+}
 
 footer {
     background-color: #333;

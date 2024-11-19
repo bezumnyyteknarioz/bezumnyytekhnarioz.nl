@@ -1,5 +1,4 @@
-function changeLanguage()
-{
+function changeLanguage() {
     const language = document.getElementById('language').value;
 
     if (language === "nl") {
@@ -43,4 +42,10 @@ function changeLanguage()
         document.querySelector("footer p").innerText =
             "© 2024 Bezumnyy Tekhnarioz - Все права защищены";
     }
+}
+
+function toggleMenu() {
+    const menu = document.querySelector("nav.menu");
+    menu.classList.toggle("open");
+}
 

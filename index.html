@@ -9,27 +9,30 @@
 </head>
 <body>
     <header>
-        <div class="logo">
-            <h1>Bezumnyy Tekhnarioz</h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#home" class="active">Home</a></li>
-                <li><a href="#services">Diensten</a></li>
-                <li><a href="#projects">Projecten</a></li>
-                <li><a href="#offers">Aanbiedingen</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="language-selector">
-            <select id="language" onchange="changeLanguage()">
-                <option value="nl">Nederlands</option>
-                <option value="en">English</option>
-                <option value="ua">Українська</option>
-                <option value="ru">Русский</option>
-            </select>
-        </div>
-    </header>
+    <div class="logo">
+        <h1>Bezumnyy Tekhnarioz</h1>
+    </div>
+    <!-- Гамбургер-кнопка -->
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <nav class="menu">
+        <ul>
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#services">Diensten</a></li>
+            <li><a href="#projects">Projecten</a></li>
+            <li><a href="#offers">Aanbiedingen</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="language-selector">
+        <select id="language" onchange="changeLanguage()">
+            <option value="nl">Nederlands</option>
+            <option value="en">English</option>
+            <option value="ua">Українська</option>
+            <option value="ru">Русский</option>
+        </select>
+    </div>
+</header>
+
 
     <section id="home" class="fade-in">
         <h2>Welkom bij Bezumnyy Tekhnarioz</h2>

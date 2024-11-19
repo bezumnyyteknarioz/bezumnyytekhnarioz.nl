@@ -1,55 +1,57 @@
-/* Основное меню */
-nav.menu ul {
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    background-color: #333;
+    color: white;
+}
+
+.menu {
+    display: flex;
+    gap: 1em;
+}
+
+.menu ul {
     list-style: none;
     display: flex;
-    gap: 20px;
-    margin: 0;
     padding: 0;
+    margin: 0;
 }
 
-nav.menu ul li a {
+.menu ul li a {
     text-decoration: none;
-    color: #000;
-    font-size: 16px;
+    color: white;
+    font-weight: bold;
 }
 
-/* Гамбургер-кнопка */
 .menu-toggle {
-    display: none;
-    font-size: 24px;
+    display: none; /* Скрываем на больших экранах */
+    font-size: 1.5em;
     background: none;
     border: none;
-    cursor: pointer;
-    margin-left: auto;
+    color: white;
 }
 
-/* Адаптивное меню для мобильных устройств */
-@media (max-width: 768px) {
-    nav.menu {
-        display: none;
+.language-selector {
+    margin-left: 1em;
+}
+
+/* Для мобильных устройств */
+@media screen and (max-width: 768px) {
+    .menu {
+        display: none; /* Скрываем меню по умолчанию */
         flex-direction: column;
-        background-color: #fff;
+        background-color: #333;
         position: absolute;
-        top: 60px;
-        right: 0;
+        top: 100%;
+        left: 0;
         width: 100%;
-        z-index: 1000;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        z-index: 10;
     }
 
-    nav.menu.open {
-        display: flex;
-    }
-
-    nav.menu ul {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-        padding: 10px 0;
-    }
-
-    nav.menu ul li a {
-        font-size: 18px;
+    .menu.open {
+        display: flex; /* Показываем, если открыто */
     }
 
     .menu-toggle {

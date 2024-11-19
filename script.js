@@ -42,4 +42,5 @@ function changeLanguage() {
         document.querySelector("footer p").innerText =
             "© 2024 Bezumnyy Tekhnarioz - Все права защищены";
     }
+}
 

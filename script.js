@@ -1,8 +1,4 @@
-function changeLanguage() 
-function toggleMenu() {
-    const menu = document.querySelector("nav.menu");
-    menu.classList.toggle("open");
-}
+function changeLanguage()
 {
     const language = document.getElementById('language').value;
 
